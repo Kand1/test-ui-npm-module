@@ -4,7 +4,7 @@
   "description": "",
   "main": "./dist/index.js",
   "scripts": {
-    "pub": "webpack && npm version patch && npm publish"
+    "pub": "git add . && git commit -m 'publish to npm' && webpack && npm version patch && npm publish"
   },
   "repository": {
     "type": "git",
