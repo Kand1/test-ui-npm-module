@@ -1,0 +1,9 @@
+.my-input {
+    border: 1px solid aquamarine;
+    padding: 5px;
+}
+
+.my-input_big {
+    font-size: 1.3rem;
+    padding: 15px;
+}
