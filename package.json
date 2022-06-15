@@ -4,7 +4,10 @@
   "description": "",
   "main": "./dist/index.js",
   "scripts": {
-    "pub": "git add . && git commit -m 'publish to npm' && webpack && npm version patch && npm publish"
+    "comm": "git add . && git commit -m 'publish to npm'",
+    "pub": "webpack && npm version patch && npm publish",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -18,7 +21,17 @@
   },
   "homepage": "https://github.com/Kand1/test-ui-npm-module#readme",
   "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-webpack5": "^6.5.9",
+    "@storybook/manager-webpack5": "^6.5.9",
+    "@storybook/react": "^6.5.9",
+    "@storybook/testing-library": "0.0.13",
     "@types/react": "^18.0.12",
+    "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -34,5 +47,6 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {}
 }

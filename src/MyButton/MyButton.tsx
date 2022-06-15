@@ -4,12 +4,14 @@ import "./MyButton.css"
 export interface MyButtonProps {
     big?: boolean;
     color: string;
-    children: React.ReactNode;
+    backgroundColor: string;
+    label: React.ReactNode;
 }
 
 const MyButton: FC<MyButtonProps> = ({
-                                         children,
+                                         label,
                                          color,
+                                         backgroundColor,
                                          big,
                                          ...props
                                      }) => {
@@ -18,8 +20,14 @@ const MyButton: FC<MyButtonProps> = ({
         classes.push('my-button_big')
     }
     return (
-        <button {...props} className={classes.join(' ')} style={{color}}>
-            {children}
+        <button {...props} className={classes.join(' ')} style={
+            {
+                color,
+                backgroundColor,
+                border: backgroundColor ? 0 : `1px solid ${color ? color : "dimgray"}`
+            }
+        }>
+            {label}
         </button>
     );
 };

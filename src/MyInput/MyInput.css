@@ -1,9 +1,40 @@
 .my-input {
-    border: 1px solid aquamarine;
-    padding: 5px;
+    padding: 8px;
+    color: dimgrey;
+    background-color: transparent;
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 0 3rem 3rem 0;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+}
+
+.my-input_white::-webkit-input-placeholder{
+    color: white;
+}
+.my-input_black::-webkit-input-placeholder{
+    color: black;
 }
 
 .my-input_big {
     font-size: 1.3rem;
-    padding: 15px;
+    padding: 13px;
+}
+
+.my-label {
+    padding: 8px;
+    color: dimgrey;
+    background-color: transparent;
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 3rem 0 0 3rem;
+    display: inline-block;
+}
+
+.my-label_big {
+    font-size: 1.3rem;
+    padding: 13px;
 }
