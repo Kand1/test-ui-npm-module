@@ -5,14 +5,15 @@ export interface MyButtonProps {
     big?: boolean;
     color: string;
     backgroundColor: string;
-    label: React.ReactNode;
+    label: string;
 }
 
 const MyButton: FC<MyButtonProps> = ({
-                                         label,
+
                                          color,
                                          backgroundColor,
                                          big,
+                                         label,
                                          ...props
                                      }) => {
     const classes = ['my-button'];

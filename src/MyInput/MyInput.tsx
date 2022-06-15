@@ -4,19 +4,19 @@ import "./MyInput.css"
 
 export interface MyInputProps {
     big?: boolean;
-    color: string;
-    backgroundColor: string;
+    whitePlaceholder?: boolean;
     placeholder: string;
     label: string;
-    whitePlaceholder?: boolean;
+    color: string;
+    backgroundColor: string;
 }
 
 const MyInput: FC<MyInputProps> = ({
                                        big,
+                                       whitePlaceholder,
                                        placeholder,
                                        label,
                                        color,
-                                       whitePlaceholder,
                                        backgroundColor,
                                        ...props
                                     }) => {
